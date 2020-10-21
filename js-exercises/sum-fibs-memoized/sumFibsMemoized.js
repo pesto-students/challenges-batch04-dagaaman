@@ -24,18 +24,18 @@ function getFibs(arr, maxNum) {
 }
 
 function sumFibs(num) {
-  const arr = [1, 1];
+  const arr = [0, 1];
   return getFibs(arr, num);
 }
 
 function cacheFunction() {
   const cache = {};
-  return (n) => {
-    if (n in cache) {
-      return cache[n];
+  return (arg) => {
+    if (arg in cache) {
+      return cache[arg];
     }
-    const result = sumFibs(n);
-    cache[n] = result;
+    const result = sumFibs(arg);
+    cache[arg] = result;
     return result;
   };
 }
