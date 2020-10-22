@@ -14,7 +14,8 @@ flipped('a', 'b', 'c', 'd');
 # Requirements
 
 ### **What are some good real-life use cases for such a function?**
-
+- Sorting in reverse order (in a table)
+- Palindrome
 
 ### **What test cases can you add to the test file?**
 
